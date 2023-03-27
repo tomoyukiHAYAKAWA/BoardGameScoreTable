@@ -108,9 +108,14 @@ extension ScoreTableViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let viewModel = viewModel else { return UICollectionViewCell() }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let rowCount = indexPath.item / viewModel.playerNumber
+        let player = indexPath.item % viewModel.playerNumber
+        let isOddRow = rowCount % 2 == 0
         cell.contentConfiguration = UIHostingConfiguration(content: {
             Text("\(viewModel.scores[indexPath.item])")
+                .font(.system(size: 20))
         })
+        cell.backgroundColor = isOddRow ? Player.init(rawValue: player)?.paleColor : Player.init(rawValue: player)?.darkColor
         return cell
     }
 }

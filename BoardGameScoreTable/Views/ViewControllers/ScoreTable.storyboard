@@ -23,21 +23,21 @@
                                 <buttonConfiguration key="configuration" style="plain" title="入力列を追加"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtt-sF-UMG">
-                                <rect key="frame" x="0.0" y="59" width="393" height="54"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="LRE-dc-tj5"/>
+                                    <constraint firstAttribute="height" constant="70" id="LRE-dc-tj5"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVy-LQ-L8w">
-                                <rect key="frame" x="0.0" y="619" width="393" height="70"/>
+                                <rect key="frame" x="0.0" y="615" width="393" height="74"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="dXg-1R-2CW"/>
+                                    <constraint firstAttribute="height" constant="74" id="dXg-1R-2CW"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Of-PH-aBg">
-                                <rect key="frame" x="0.0" y="113" width="393" height="506"/>
+                                <rect key="frame" x="0.0" y="129" width="393" height="486"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PcE-Ik-QRl">
                                     <size key="itemSize" width="128" height="128"/>
@@ -66,10 +66,10 @@
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YpJ-ON-KIP" secondAttribute="bottom" constant="20" id="3Ir-lZ-aWS"/>
                             <constraint firstItem="YpJ-ON-KIP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7kg-4W-aKD"/>
-                            <constraint firstItem="4Of-PH-aBg" firstAttribute="top" secondItem="jtt-sF-UMG" secondAttribute="bottom" id="Bn2-4y-8b2"/>
                             <constraint firstItem="jtt-sF-UMG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SKD-u4-J3a"/>
                             <constraint firstItem="4Of-PH-aBg" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Tiw-Hk-RtE"/>
                             <constraint firstItem="jtt-sF-UMG" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="U84-0p-Xqf"/>
+                            <constraint firstItem="4Of-PH-aBg" firstAttribute="top" secondItem="jtt-sF-UMG" secondAttribute="bottom" id="gsW-0t-3w9"/>
                             <constraint firstItem="AVy-LQ-L8w" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hPc-5T-AyK"/>
                             <constraint firstItem="4Of-PH-aBg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lg5-uJ-yFZ"/>
                             <constraint firstItem="AVy-LQ-L8w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sKo-xx-G0t"/>
