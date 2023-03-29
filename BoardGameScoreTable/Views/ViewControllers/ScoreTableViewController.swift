@@ -112,8 +112,24 @@ extension ScoreTableViewController: UICollectionViewDataSource {
         let player = indexPath.item % viewModel.playerNumber
         let isOddRow = rowCount % 2 == 0
         cell.contentConfiguration = UIHostingConfiguration(content: {
-            Text("\(viewModel.scores[indexPath.item])")
-                .font(.system(size: 20))
+            ZStack {
+                Text("\(viewModel.scores[indexPath.item])")
+                    .font(.system(size: 20))
+                HStack(spacing: 0) {
+                    if 0 < player  {
+                        Rectangle()
+                            .foregroundColor(.black)
+                            .frame(width: 1)
+                    }
+                    Spacer()
+                    if player < viewModel.playerNumber - 1 {
+                        Rectangle()
+                            .foregroundColor(.black)
+                            .frame(width: 1)
+                    }
+                }
+            }
+            .frame(width: UIScreen.main.bounds.width / CGFloat(viewModel.playerNumber), height: 60.0)
         })
         cell.backgroundColor = isOddRow ? Player.init(rawValue: player)?.paleColor : Player.init(rawValue: player)?.darkColor
         return cell

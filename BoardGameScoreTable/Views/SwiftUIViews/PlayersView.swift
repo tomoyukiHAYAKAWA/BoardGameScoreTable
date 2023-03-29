@@ -55,21 +55,36 @@ enum Player: Int {
 struct PlayersView: View {
     var playerNumber: Int
     var body: some View {
-        VStack(spacing: 2) {
+        VStack(spacing: 0) {
             HStack(spacing: 0) {
                 ForEach(0 ..< playerNumber, id: \.self) { index in
-                    Image(Player(rawValue: index)!.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: UIScreen.main.bounds.width / CGFloat(playerNumber), height: 50)
+                    ZStack {
+                        Image(Player(rawValue: index)!.image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: UIScreen.main.bounds.width / CGFloat(playerNumber), height: 50)
+                        HStack(spacing: 0) {
+                            if 0 < index  {
+                                Rectangle()
+                                    .foregroundColor(.black)
+                                    .frame(width: 1, height: 70)
+                            }
+                            Spacer()
+                            if index < playerNumber - 1 {
+                                Rectangle()
+                                    .foregroundColor(.black)
+                                    .frame(width: 1, height: 70)
+                            }
+                        }
+                    }
                 }
             }
-            .padding(.top, 8)
-            .padding(.bottom, 8)
+            .padding(.vertical, playerNumber == 1 ? 8 : 0)
             Rectangle()
                 .foregroundColor(.black)
                 .frame(height: 4)
         }
+        .background(Color(UIColor(red: 0.93, green: 0.86, blue: 0.70, alpha: 0.5)))
     }
 }
 
