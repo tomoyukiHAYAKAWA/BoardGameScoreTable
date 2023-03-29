@@ -6,7 +6,7 @@ struct TotalScoreView: View {
         VStack(spacing: 0) {
             Rectangle()
                 .foregroundColor(.black)
-                .frame(height: 4)
+                .frame(height: 3)
             HStack(spacing: 0) {
                 ForEach(0 ..< viewModel.playerNumber, id: \.self) { index in
                     ZStack {

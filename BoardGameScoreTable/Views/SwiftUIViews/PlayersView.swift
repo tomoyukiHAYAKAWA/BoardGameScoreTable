@@ -67,22 +67,22 @@ struct PlayersView: View {
                             if 0 < index  {
                                 Rectangle()
                                     .foregroundColor(.black)
-                                    .frame(width: 1, height: 70)
+                                    .frame(width: 1, height: 67)
                             }
                             Spacer()
                             if index < playerNumber - 1 {
                                 Rectangle()
                                     .foregroundColor(.black)
-                                    .frame(width: 1, height: 70)
+                                    .frame(width: 1, height: 67)
                             }
                         }
                     }
                 }
             }
-            .padding(.vertical, playerNumber == 1 ? 8 : 0)
+            .padding(.vertical, playerNumber == 1 ? 9 : 0)
             Rectangle()
                 .foregroundColor(.black)
-                .frame(height: 4)
+                .frame(height: 3)
         }
         .background(Color(UIColor(red: 0.93, green: 0.86, blue: 0.70, alpha: 0.5)))
     }
