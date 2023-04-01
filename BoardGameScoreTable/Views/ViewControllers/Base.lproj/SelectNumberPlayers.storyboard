@@ -16,23 +16,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プレイヤー人数を選択" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAq-A7-pfa">
-                                <rect key="frame" x="94.666666666666686" y="223" width="204" height="24"/>
+                                <rect key="frame" x="94.666666666666686" y="218" width="204" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xn-Cv-vGD">
-                                <rect key="frame" x="0.0" y="327" width="393" height="216"/>
+                                <rect key="frame" x="0.0" y="322" width="393" height="216"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スコアボード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqf-pW-d2d">
-                                <rect key="frame" x="120" y="172" width="152" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQT-vE-87K">
-                                <rect key="frame" x="51.666666666666657" y="626" width="290" height="38"/>
+                                <rect key="frame" x="51.666666666666657" y="618" width="290" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="4w8-NM-c6A"/>
@@ -44,26 +37,54 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スコアボード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqf-pW-d2d">
+                                <rect key="frame" x="120.66666666666669" y="172" width="152" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzc-Lr-dFA">
+                                <rect key="frame" x="51.666666666666657" y="664" width="290" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Rst-cr-U2h"/>
+                                    <constraint firstAttribute="width" constant="290" id="dAZ-YE-Op9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="使い方">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.96625071760000003" green="0.9300510287" blue="0.85116535429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96625071760000003" green="0.9300510287" blue="0.85116535429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bAq-A7-pfa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Aqc-zQ-V5b"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jQT-vE-87K" secondAttribute="bottom" constant="154" id="HCs-0Y-Ep2"/>
+                            <constraint firstItem="bAq-A7-pfa" firstAttribute="top" secondItem="Aqf-pW-d2d" secondAttribute="bottom" constant="16" id="2y4-78-SpX"/>
+                            <constraint firstItem="Fzc-Lr-dFA" firstAttribute="centerX" secondItem="jQT-vE-87K" secondAttribute="centerX" id="5NP-6f-aWQ"/>
                             <constraint firstItem="jQT-vE-87K" firstAttribute="centerX" secondItem="0xn-Cv-vGD" secondAttribute="centerX" id="OTv-xs-CzD"/>
+                            <constraint firstItem="Aqf-pW-d2d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="cCp-Nc-WFt"/>
                             <constraint firstItem="bAq-A7-pfa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gJF-TL-x24"/>
+                            <constraint firstItem="jQT-vE-87K" firstAttribute="top" secondItem="0xn-Cv-vGD" secondAttribute="bottom" constant="80" id="jhY-2r-it9"/>
                             <constraint firstItem="0xn-Cv-vGD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lgu-9d-Lt4"/>
                             <constraint firstItem="0xn-Cv-vGD" firstAttribute="centerX" secondItem="bAq-A7-pfa" secondAttribute="centerX" id="lzy-Ln-INf"/>
+                            <constraint firstItem="Fzc-Lr-dFA" firstAttribute="top" secondItem="jQT-vE-87K" secondAttribute="bottom" constant="8" id="mO4-Xu-Aaa"/>
                             <constraint firstItem="jQT-vE-87K" firstAttribute="width" secondItem="0xn-Cv-vGD" secondAttribute="width" multiplier="0.737913" id="oyR-MY-fvv"/>
+                            <constraint firstItem="Aqf-pW-d2d" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q7b-7e-gWx"/>
                             <constraint firstItem="0xn-Cv-vGD" firstAttribute="top" secondItem="bAq-A7-pfa" secondAttribute="bottom" constant="80" id="rUl-p4-gQ4"/>
+                            <constraint firstItem="Fzc-Lr-dFA" firstAttribute="width" secondItem="jQT-vE-87K" secondAttribute="width" id="sSs-Zv-jRT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fzc-Lr-dFA" secondAttribute="bottom" constant="116" id="u77-wM-vJZ"/>
                             <constraint firstItem="0xn-Cv-vGD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="waE-DM-dNA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QA7-fM-moU">
-                        <barButtonItem key="backBarButtonItem" title="もどる" id="BOj-m0-1I4"/>
+                        <barButtonItem key="backBarButtonItem" title="もどる" id="BOj-m0-1I4">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="confirmButton" destination="jQT-vE-87K" id="Cnj-re-uJB"/>
+                        <outlet property="howToButton" destination="Fzc-Lr-dFA" id="EJo-Q7-h9O"/>
                         <outlet property="picker" destination="0xn-Cv-vGD" id="cx0-dp-3sg"/>
                     </connections>
                 </viewController>

@@ -11,6 +11,7 @@ final class SelectNumberPlayersViewController: UIViewController {
 
     @IBOutlet private weak var picker: UIPickerView!
     @IBOutlet private weak var confirmButton: UIButton!
+    @IBOutlet private weak var howToButton: UIButton!
 
     private var choosePlayerNumber: Int = 1
     private let playerNumbers: [Int] = [Int](1...6)
@@ -34,6 +35,18 @@ final class SelectNumberPlayersViewController: UIViewController {
                     viewModel: ScoreTableViewModel(playerNumber: self.choosePlayerNumber)
                 )
                 self.navigationController?.pushViewController(vc, animated: true)
+            })
+            .store(in: &cancellables)
+
+        howToButton.layer.borderColor = UIColor.black.cgColor
+        howToButton.layer.borderWidth = 2.0
+        howToButton.layer.cornerRadius = 19.0
+        howToButton.clipsToBounds = true
+
+        // TODO: - 使い方の画像作成, Viewを表示する
+        howToButton.publisher(for: .touchUpInside)
+            .sink(receiveValue: { _ in
+                print("使い方ボタンを押下")
             })
             .store(in: &cancellables)
 
