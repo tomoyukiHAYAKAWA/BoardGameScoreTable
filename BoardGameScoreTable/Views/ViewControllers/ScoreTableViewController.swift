@@ -108,8 +108,8 @@ extension ScoreTableViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let viewModel = viewModel else { return UICollectionViewCell() }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        let rowCount = indexPath.item / viewModel.playerNumber
-        let player = indexPath.item % viewModel.playerNumber
+        let rowCount = viewModel.countRows(index: indexPath.item)
+        let player = viewModel.playerColumn(index: indexPath.item)
         let isOddRow = rowCount % 2 == 0
         cell.contentConfiguration = UIHostingConfiguration(content: {
             ZStack {
@@ -139,8 +139,8 @@ extension ScoreTableViewController: UICollectionViewDataSource {
 extension ScoreTableViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let viewModel = viewModel else { return }
-        let rowCount = indexPath.item / viewModel.playerNumber
-        let player = indexPath.item % viewModel.playerNumber
+        let rowCount = viewModel.countRows(index: indexPath.item)
+        let player = viewModel.playerColumn(index: indexPath.item)
         print("\(rowCount + 1)列目のPlayer\(player + 1)")
         var alertTextField: UITextField?
         let alert = UIAlertController(

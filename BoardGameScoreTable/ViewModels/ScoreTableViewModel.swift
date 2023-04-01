@@ -51,6 +51,14 @@ final class ScoreTableViewModel: ObservableObject {
         addScores()
     }
 
+    func countRows(index: Int) -> Int {
+        return index / playerNumber
+    }
+
+    func playerColumn(index: Int) -> Int {
+        return index % playerNumber
+    }
+
     private func addScores() {
         for _ in 0 ..< playerNumber {
             scores.append(0)
