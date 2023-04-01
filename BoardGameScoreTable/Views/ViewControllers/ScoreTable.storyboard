@@ -17,11 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpJ-ON-KIP">
-                                <rect key="frame" x="132.66666666666666" y="763" width="127.99999999999997" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="入力列を追加"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtt-sF-UMG">
                                 <rect key="frame" x="0.0" y="59" width="393" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -30,14 +25,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVy-LQ-L8w">
-                                <rect key="frame" x="0.0" y="616" width="393" height="73"/>
+                                <rect key="frame" x="0.0" y="622" width="393" height="76"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="dXg-1R-2CW"/>
+                                    <constraint firstAttribute="height" constant="76" id="dXg-1R-2CW"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Of-PH-aBg">
-                                <rect key="frame" x="0.0" y="129" width="393" height="487"/>
+                                <rect key="frame" x="0.0" y="129" width="393" height="493"/>
                                 <color key="backgroundColor" red="0.96625071760000003" green="0.9300510287" blue="0.85116535429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PcE-Ik-QRl">
                                     <size key="itemSize" width="128" height="128"/>
@@ -60,22 +55,35 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="ViD-52-YNE"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpJ-ON-KIP">
+                                <rect key="frame" x="0.0" y="698" width="393" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Jrw-Ua-7DH"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="入力列を追加">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.96625071760000003" green="0.9300510287" blue="0.85116535429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YpJ-ON-KIP" secondAttribute="bottom" constant="20" id="3Ir-lZ-aWS"/>
+                            <constraint firstItem="YpJ-ON-KIP" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="1jl-hc-nOO"/>
                             <constraint firstItem="YpJ-ON-KIP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7kg-4W-aKD"/>
+                            <constraint firstItem="YpJ-ON-KIP" firstAttribute="top" secondItem="AVy-LQ-L8w" secondAttribute="bottom" id="N1I-Om-Y1F"/>
+                            <constraint firstAttribute="trailing" secondItem="YpJ-ON-KIP" secondAttribute="trailing" id="QSU-WP-WGu"/>
                             <constraint firstItem="jtt-sF-UMG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SKD-u4-J3a"/>
                             <constraint firstItem="4Of-PH-aBg" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Tiw-Hk-RtE"/>
                             <constraint firstItem="jtt-sF-UMG" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="U84-0p-Xqf"/>
                             <constraint firstItem="4Of-PH-aBg" firstAttribute="top" secondItem="jtt-sF-UMG" secondAttribute="bottom" id="gsW-0t-3w9"/>
                             <constraint firstItem="AVy-LQ-L8w" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hPc-5T-AyK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YpJ-ON-KIP" secondAttribute="bottom" constant="75" id="kbI-Wi-jlJ"/>
                             <constraint firstItem="4Of-PH-aBg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lg5-uJ-yFZ"/>
                             <constraint firstItem="AVy-LQ-L8w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sKo-xx-G0t"/>
                             <constraint firstItem="AVy-LQ-L8w" firstAttribute="top" secondItem="4Of-PH-aBg" secondAttribute="bottom" id="sgR-8B-E2L"/>
                             <constraint firstItem="jtt-sF-UMG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="vKU-hL-7qc"/>
-                            <constraint firstItem="YpJ-ON-KIP" firstAttribute="top" secondItem="AVy-LQ-L8w" secondAttribute="bottom" constant="74" id="yHg-Sw-WzE"/>
                         </constraints>
                     </view>
                     <connections>

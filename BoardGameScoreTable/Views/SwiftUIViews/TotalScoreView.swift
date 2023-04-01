@@ -30,6 +30,9 @@ struct TotalScoreView: View {
                     }
                 }
             }
+            Rectangle()
+                .foregroundColor(.black)
+                .frame(height: 3)
         }
         .background(Color(UIColor(red: 0.93, green: 0.86, blue: 0.70, alpha: 0.5)))
     }
