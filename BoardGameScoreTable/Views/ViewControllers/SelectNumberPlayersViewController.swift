@@ -22,6 +22,11 @@ final class SelectNumberPlayersViewController: UIViewController {
         picker.dataSource = self
         picker.delegate = self
 
+        confirmButton.layer.borderColor = UIColor.black.cgColor
+        confirmButton.layer.borderWidth = 2.0
+        confirmButton.layer.cornerRadius = 19.0
+        confirmButton.clipsToBounds = true
+
         confirmButton.publisher(for: .touchUpInside)
             .sink(receiveValue: { [weak self] _ in
                 guard let self = self else { return }
