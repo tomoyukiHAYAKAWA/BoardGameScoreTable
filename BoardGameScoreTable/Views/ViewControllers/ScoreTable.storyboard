@@ -33,7 +33,7 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Of-PH-aBg">
                                 <rect key="frame" x="0.0" y="129" width="393" height="493"/>
-                                <color key="backgroundColor" red="0.96625071760000003" green="0.9300510287" blue="0.85116535429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PcE-Ik-QRl">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -68,7 +68,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.96625071760000003" green="0.9300510287" blue="0.85116535429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YpJ-ON-KIP" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="1jl-hc-nOO"/>
                             <constraint firstItem="YpJ-ON-KIP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7kg-4W-aKD"/>

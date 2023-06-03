@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC0DCAFC29D496B20007B3F3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DCAFB29D496B20007B3F3 /* Player.swift */; };
+		CC0DCB022A2AD3D50007B3F3 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DCB012A2AD3D50007B3F3 /* AppColor.swift */; };
 		CC0FFD2029CA0DED0018C6FB /* ScoreTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FFD1F29CA0DED0018C6FB /* ScoreTableViewModel.swift */; };
 		CC493D0829C58FEE00C5265F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC493D0729C58FEE00C5265F /* AppDelegate.swift */; };
 		CC493D0A29C58FEE00C5265F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC493D0929C58FEE00C5265F /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		CC0DCAFB29D496B20007B3F3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CC0DCB012A2AD3D50007B3F3 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		CC0FFD1F29CA0DED0018C6FB /* ScoreTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewModel.swift; sourceTree = "<group>"; };
 		CC493D0429C58FEE00C5265F /* BoardGameScoreTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardGameScoreTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC493D0729C58FEE00C5265F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				CC493D1229C58FEF00C5265F /* LaunchScreen.storyboard */,
 				CC493D0929C58FEE00C5265F /* SceneDelegate.swift */,
 				CC0DCAFB29D496B20007B3F3 /* Player.swift */,
+				CC0DCB012A2AD3D50007B3F3 /* AppColor.swift */,
 			);
 			path = BoardGameScoreTable;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC0DCAFC29D496B20007B3F3 /* Player.swift in Sources */,
+				CC0DCB022A2AD3D50007B3F3 /* AppColor.swift in Sources */,
 				CC493D0C29C58FEE00C5265F /* SelectNumberPlayersViewController.swift in Sources */,
 				CC493D2629C6E3EE00C5265F /* Combine+UIKit.swift in Sources */,
 				CC0FFD2029CA0DED0018C6FB /* ScoreTableViewModel.swift in Sources */,

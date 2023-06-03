@@ -75,6 +75,7 @@ final class ScoreTableViewController: UIViewController {
         playersView.addSubview(vc.view)
         vc.didMove(toParent: self)
 
+        // TODO: - これextensionにしたい
         vc.view.translatesAutoresizingMaskIntoConstraints = false
         vc.view.topAnchor.constraint(equalTo: self.self.playersView.topAnchor).isActive = true
         vc.view.trailingAnchor.constraint(equalTo: self.playersView.trailingAnchor).isActive = true
@@ -110,7 +111,7 @@ extension ScoreTableViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         let rowCount = viewModel.countRows(index: indexPath.item)
         let player = viewModel.playerColumn(index: indexPath.item)
-        let isOddRow = rowCount % 2 == 0
+        let isAddRow = rowCount % 2 == 0
         cell.contentConfiguration = UIHostingConfiguration(content: {
             ZStack {
                 Text("\(viewModel.scores[indexPath.item])")
@@ -119,19 +120,19 @@ extension ScoreTableViewController: UICollectionViewDataSource {
                     if 0 < player  {
                         Rectangle()
                             .foregroundColor(.black)
-                            .frame(width: 1)
+                            .frame(width: 0.5)
                     }
                     Spacer()
                     if player < viewModel.playerNumber - 1 {
                         Rectangle()
                             .foregroundColor(.black)
-                            .frame(width: 1)
+                            .frame(width: 0.5)
                     }
                 }
             }
             .frame(width: UIScreen.main.bounds.width / CGFloat(viewModel.playerNumber), height: 60.0)
         })
-        cell.backgroundColor = isOddRow ? Player.init(rawValue: player)?.paleColor : Player.init(rawValue: player)?.darkColor
+        cell.backgroundColor = isAddRow ? AppColor().paleColor : AppColor().darkColor
         return cell
     }
 }

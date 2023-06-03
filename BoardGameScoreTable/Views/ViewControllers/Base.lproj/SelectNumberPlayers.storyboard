@@ -53,12 +53,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="使い方">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.96625071760000003" green="0.9300510287" blue="0.85116535429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.96625071760000003" green="0.9300510287" blue="0.85116535429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bAq-A7-pfa" firstAttribute="top" secondItem="Aqf-pW-d2d" secondAttribute="bottom" constant="16" id="2y4-78-SpX"/>
                             <constraint firstItem="Fzc-Lr-dFA" firstAttribute="centerX" secondItem="jQT-vE-87K" secondAttribute="centerX" id="5NP-6f-aWQ"/>

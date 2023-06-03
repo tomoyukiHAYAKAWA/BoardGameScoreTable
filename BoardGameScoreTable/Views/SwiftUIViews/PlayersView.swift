@@ -15,13 +15,13 @@ struct PlayersView: View {
                             if 0 < index  {
                                 Rectangle()
                                     .foregroundColor(.black)
-                                    .frame(width: 1, height: 67)
+                                    .frame(width: 0.5, height: 67)
                             }
                             Spacer()
                             if index < playerNumber - 1 {
                                 Rectangle()
                                     .foregroundColor(.black)
-                                    .frame(width: 1, height: 67)
+                                    .frame(width: 0.5, height: 67)
                             }
                         }
                     }
@@ -30,9 +30,8 @@ struct PlayersView: View {
             .padding(.vertical, playerNumber == 1 ? 9 : 0)
             Rectangle()
                 .foregroundColor(.black)
-                .frame(height: 3)
+                .frame(height: 1)
         }
-        .background(Color(UIColor(red: 0.93, green: 0.86, blue: 0.70, alpha: 0.5)))
     }
 }
 
